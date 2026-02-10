@@ -1,0 +1,19 @@
+1.332
+0.0
+10000
+10
+1
+180
+10
+100
+
+
+//=========================================
+- refractiveIndex_re; //real part of refractive index; absorption is not considered in our case! 
+- refractiveIndex_im; //imaginary part of refractive index
+- positionNumber; //number of orientations;
+- batchSize;
+- batchNumber;
+- binNumber; // for scattering angle 
+- reflInsideControl; // The number of reflections a photon undergoes inside an ice crystal.
+- totReflControl;//total internal reflection control

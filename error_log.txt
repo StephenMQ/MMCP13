@@ -1,0 +1,8 @@
+*************************************************************************             
+ Light Scattering by Non-Spherical Particles + Polarization.                              
+ Computation of Mueller matrix for convex polyhedron. 	         
+ (Convex Hull Construction + Merge If Triangular Faces On Same Plane.)             
+ Geometric optics + Monte Carlo, Diffraction is not considered.       		     
+ 2025.06 		     
+ Mu Quan,  Email: mu.quan@foxmail.com 		     
+*************************************************************************
