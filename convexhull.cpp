@@ -111,6 +111,7 @@ void generateRandomPoints(vec3 p[])
     semi_axis_a = 1.0;
     semi_axis_b = 1.0;
     semi_axis_c = 1.0;
+    ConHull_max_radius = sqrt(semi_axis_a * semi_axis_a + semi_axis_b * semi_axis_b + semi_axis_c * semi_axis_c);
 
     for (int i = 0; i < hull.n; i++)
     {
@@ -124,6 +125,7 @@ void generateRandomPoints(vec3 p[])
 void generatePointsOnSphere(vec3 p[])
 {
     double sphere_radius = 1.0; // Sphere radius
+    ConHull_max_radius = sphere_radius;
     //hull.n = ceil(4.0 + rn() * 190.0);//  input points number setup
     hull.n = 100;
     double sita, phi;
@@ -143,6 +145,7 @@ void generatePointsOnSphere(vec3 p[])
 void generatePointsOnSphere02(vec3 p[])
 {
     double sphere_radius = 1.0; // Sphere radius
+    ConHull_max_radius = sphere_radius;
     int sita_N = 10, phi_N = 10, hull_n_counter;
 
     double sita, phi;
@@ -179,6 +182,8 @@ void generatePointsOnSphere02(vec3 p[])
 void generatePointsOnEllipsoid(vec3 p[])
 {
     semi_axis_a = 0.2, semi_axis_b = 0.5, semi_axis_c = 1.0; // Semi-axis lengths of the ellipsoid
+    ConHull_max_radius = sqrt(semi_axis_a * semi_axis_a + semi_axis_b * semi_axis_b + semi_axis_c * semi_axis_c);
+
     int sita_N = 20, phi_N = 10, hull_n_counter;
     double sita, phi;
 
@@ -218,6 +223,7 @@ void generatePointsOnEllipsoid(vec3 p[])
 void generatePointsOnEllipsoidWithOnePole(vec3 p[])
 {
     semi_axis_a = 0.5, semi_axis_b = 0.5, semi_axis_c = 1.0; // Semi-axis lengths of the ellipsoid
+    ConHull_max_radius = sqrt(semi_axis_a * semi_axis_a + semi_axis_b * semi_axis_b + semi_axis_c * semi_axis_c);
     int sita_N = 2, phi_N = 6, hull_n_counter;
     double sita, phi;
 
@@ -255,6 +261,7 @@ void generatePointsOnEllipsoidWithOnePole(vec3 p[])
 void generatePointsOnEllipsoidWithoutPoles(vec3 p[])
 {
     semi_axis_a = 1, semi_axis_b = 3, semi_axis_c = 5; // Semi-axis lengths of the ellipsoid
+    ConHull_max_radius = sqrt(semi_axis_a * semi_axis_a + semi_axis_b * semi_axis_b + semi_axis_c * semi_axis_c);
     int sita_N = 20, phi_N = 10, hull_n_counter = 0;
     double sita, phi;
 

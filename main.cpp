@@ -111,10 +111,10 @@ int main(int argc, char** argv)
 	//generatePointsOnSphere(p);
 	//generatePointsOnSphere02(p);
 	//generateRandomPoints(p);
-	//generatePointsOnEllipsoid(p);
+	generatePointsOnEllipsoid(p);
 	//generatePointsOnEllipsoidWithOnePole(p);
 	//generatePointsOnEllipsoidWithoutPoles(p);
-	generatePointsOnEllipticCylinder(p);
+	//generatePointsOnEllipticCylinder(p);
 
 	//--------------------------------------case 2: read points from file
 	//readIn(p);  outputReadInDataForCheck(p);

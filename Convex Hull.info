@@ -2,5 +2,5 @@
 NIP: Number of Initial points;
 NFF: Number of Final Faces;
 NFV: Number of Final Vertices;
-NIP=12   NFF=20   NFV=12
-semi_axis_a=2.000000e+00   semi_axis_b=2.000000e+00   semi_axis_c=5.000000e+00
+NIP=202   NFF=400   NFV=202
+semi_axis_a=2.000000e-01   semi_axis_b=5.000000e-01   semi_axis_c=1.000000e+00
